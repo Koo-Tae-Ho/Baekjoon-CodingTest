@@ -4,6 +4,8 @@ public class Main_Array1_10810 {
 
     public static void main(String[] args) {
 
+        //내일 풀 것
+
 
     }
 }
