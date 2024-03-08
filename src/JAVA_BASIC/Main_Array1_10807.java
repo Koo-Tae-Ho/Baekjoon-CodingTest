@@ -7,19 +7,17 @@ public class Main_Array1_10807 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int N = Integer.parseInt(sc.nextLine());
+        String[] up = sc.nextLine().split(" ");
+        int N = Integer.parseInt(up[0]);
+        int v = Integer.parseInt(up[1]);
 
         String[] numberBox = sc.nextLine().split(" ");
 
-        int v = Integer.parseInt(sc.nextLine());
-
-        int count = 0;
-
         for(int i = 0; i < N; i++){
-            if(Integer.parseInt(numberBox[i]) == v){
-                count++;
+            if(Integer.parseInt(numberBox[i]) < v){
+                System.out.print(numberBox[i] + " ");
             }
         }
-        System.out.println(count);
+
     }
 }
