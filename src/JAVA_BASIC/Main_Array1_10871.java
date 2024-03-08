@@ -3,18 +3,19 @@ package JAVA_BASIC;
 import java.util.Scanner;
 
 public class Main_Array1_10871 {
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        boolean[] submitted = new boolean[31]; // 인덱스 0은 사용하지 않음
-        for(int i = 0; i < 28; i++) {
-            int num = scanner.nextInt();
-            submitted[num] = true;
-        }
+        Scanner sc = new Scanner(System.in);
+        String[] up = sc.nextLine().split(" ");
+        int N = Integer.parseInt(up[0]);
+        int v = Integer.parseInt(up[1]);
 
-        for(int i = 1; i <= 30; i++) {
-            if(!submitted[i]) {
-                System.out.println(i);
+        String[] numberBox = sc.nextLine().split(" ");
+
+        for(int i = 0; i < N; i++){
+            if(Integer.parseInt(numberBox[i]) < v){
+                System.out.print(numberBox[i] + " ");
             }
         }
     }
